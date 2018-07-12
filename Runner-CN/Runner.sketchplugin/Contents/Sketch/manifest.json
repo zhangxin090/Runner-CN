@@ -1,0 +1,109 @@
+{
+  "author" : "Roy, Nikolas, Sergi, Hussain",
+  "commands" : [
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "cmd '",
+      "name" : "自动化",
+      "identifier" : "run",
+      "icon" : "icons/run.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "cmd shift '",
+      "name" : "运行上一个操作",
+      "identifier" : "runLast",
+      "icon" : "icons/run.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "执行",
+      "identifier" : "goto",
+      "icon" : "icons/goto.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "插入",
+      "identifier" : "insert",
+      "icon" : "icons/insert.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "新建",
+      "identifier" : "create",
+      "icon" : "icons/create.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "应用",
+      "identifier" : "apply",
+      "icon" : "icons/apply.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "安装插件",
+      "identifier" : "install",
+      "icon" : "icons/install.png"
+    },
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "自定义工具栏菜单",
+      "identifier" : "customizeToolbar",
+      "description" : "Customize your Sketch Toolbar by adding plugin actions",
+      "icon" : "icons/icon-runnerLogo.png"
+    },
+    {
+      "script": "script.js",
+      "handlers": {
+        "actions": {
+          "Startup" : "onStart"
+        }
+      }
+    },
+    {
+      "script": "script.js",
+      "handlers": {
+        "actions": {
+          "OpenDocument" : "onDocOpen"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title" : "自动化",
+    "items": [
+      "run",
+      "runLast",
+      "-",
+      "goto",
+      "insert",
+      "create",
+      "apply",
+      "install"
+    ]
+  },
+  "identifier" : "com.sketchrunner.Runner",
+  "version" : "0.9.7",
+  "icon" : "icons/runner-icon.png",
+  "description" : "Speed up your Sketch workflow",
+  "authorEmail" : "hello@sketchrunner.com",
+  "name" : "自动化",
+  "versionCheckURL" : "https://sketchrunner.github.io/runner-info/versioncheck.json",
+  "downloadPluginURL" : "https://sketchrunner.github.io/runner-info/Runner.zip",
+  "disableCocoaScriptPreprocessor" : true,
+  "appcast" : "https://sketchrunner.github.io/runner-info/appcast.xml"
+}
